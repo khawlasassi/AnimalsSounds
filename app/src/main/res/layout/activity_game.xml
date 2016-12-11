@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/backgame"
+    tools:context="com.badinini.walid.animalssounds.GameActivity"><![CDATA[
+
+    Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANIMAL1"
+        android:id="@+id/AN1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="97dp" />
+
+    Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANIMAL3"
+        android:id="@+id/AN3"
+        android:layout_alignBottom="@+id/AN2"
+        android:layout_toRightOf="@+id/AN2"
+        android:layout_toEndOf="@+id/AN2" />
+
+
+
+    ]]>
+
+    <ImageButton
+
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:id="@+id/imageButton1"
+        android:onClick="verify"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:id="@+id/imageButton2"
+        android:onClick="verify"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:id="@+id/imageButton3"
+        android:onClick="verify"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:id="@+id/playIcon"
+            android:onClick="playSound"
+            android:background="#06892d"
+            android:layout_centerInParent="true"
+            android:src="@android:drawable/ic_media_play"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SCORE"
+            android:textColor="#03fc28"
+            android:textStyle="bold"
+            android:textSize="32dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/textView"
+           />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="000"
+        android:id="@+id/score"
+        android:textColor="#03fc28"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView"
+        />
+    </RelativeLayout>
+
+
+</RelativeLayout>
